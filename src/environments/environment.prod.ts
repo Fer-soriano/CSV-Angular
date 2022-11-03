@@ -1,3 +1,3 @@
 export const environment = {
-  production: true
+  backUrl: 'http://localhost:8090/api/1.0'
 };
