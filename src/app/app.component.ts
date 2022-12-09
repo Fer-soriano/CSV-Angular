@@ -46,9 +46,15 @@ fileUpload(event: any) {
     timer: 2500
   })
   await location.reload();
+  
+  /*await Swal.fire({
+    icon: 'success',
+    title: 'Datos NO Actualizados Correctamente',
+    showConfirmButton: false,
+    timer: 2500
+  })
+  await location.reload();*/
 
 }
-
-
   title = 'csv-files-frontend';
 }

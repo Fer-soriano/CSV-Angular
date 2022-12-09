@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  angular-services:
+    container_name: angular-container2
+    build: ./
+    volumes: 
+    - './:/usr/src/app'
+    ports:
+      - "4202:4200"
+    command: >
+      bash -c "npm start"
+  docker-nginx:
+    container_name: docker-nginx
+    build: ./
+    ports:
+      - "8090:80"
+    command: ["nginx", "-g", "daemon. off;"]
+    links:
+      - angular-services

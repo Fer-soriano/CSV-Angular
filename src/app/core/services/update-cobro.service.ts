@@ -17,8 +17,5 @@ export class UpdateCobroService {
   actualizarCobros(COBRADO: String, ADICIONAL2: String):Observable<any>{
     return this.httpClient.put<any>(this.urlEndPoint + 'adicional/actualizarCobros/'+'?COBRADO='+COBRADO+'&ADICIONAL2='+ADICIONAL2, this.httpOptions);
   }
-
- 
-
   
 }
